@@ -1,5 +1,7 @@
 ## This is an unofficial mirror of: https://bitbucket.org/berkeleylab/jgi-polycracker
 
+Last Updated: 8/4/2019
+
 ## Quick summary
 
 polyCRACKER is an unsupervised machine learning approach to the classification and extraction
@@ -32,7 +34,7 @@ extraction of subgenomes by sequence alignment, when the progenitor genome seque
 #### For more information, see the polyCRACKER manuscript preprint. Please cite the following article if you use polyCRACKER in your work.
 
 **[PolyCRACKER, a robust method for the unsupervised partitioning of polyploid subgenomes by signatures of repetitive DNA evolution.
-Sean P Gordon, Joshua J Levy, John P Vogel](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5828-5)**
+\*Sean P Gordon, \*Joshua J Levy, John P Vogel](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5828-5)**
 
 (First and second authors are co-first authors.)
 
@@ -40,7 +42,7 @@ Sean P Gordon, Joshua J Levy, John P Vogel](https://bmcgenomics.biomedcentral.co
 (requires mac or linux OS)
 (Docker works with Windows)
 
-###Install of polyCRACKER dependencies
+### Install of polyCRACKER dependencies
 
 - Docker (recommended)
 
