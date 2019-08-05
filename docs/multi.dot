@@ -1,0 +1,11 @@
+strict digraph  {
+	graph [directed=True];
+	splitFasta -> writeKmerCount;
+	writeKmerCount -> kmer2Fasta;
+	kmer2Fasta -> blast_kmers;
+	blast_kmers -> blast2bed;
+	blast2bed -> generate_Kmer_Matrix;
+	generate_Kmer_Matrix -> transform_plot;
+	transform_plot -> cluster;
+	cluster -> subgenomeExtraction;
+}

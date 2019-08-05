@@ -1,0 +1,72 @@
+# polyCRACKER configuration file
+
+# file paths
+blastPath = ./blast_files/
+kmercountPath = ./kmercount_files/
+fastaPath = ./fasta_files/
+bedPath = ./bed_files/
+
+# genome
+genome = fungi.fa
+
+# sge interpreter
+slurm = 0
+local = 1
+
+# blast or bbtools // deprecated
+BB = 1
+
+# recommended practice, number of dimensions > number of subgenomes
+n_subgenomes = 4
+n_dimensions = 4
+
+# split fasta into chunks
+splitFasta = 0
+preFilter = 0
+splitFastaLineLength = 100000
+
+# write kmer counts and convert to fasta file to be blasted
+writeKmer = 0
+kmerLength = 11
+kmer2Fasta = 0
+kmer_low_count = 5
+use_high_count = 0
+kmer_high_count = 2000000
+sampling_sensitivity = 1
+
+# use original genome for final analysis output?
+original = 0
+
+# blast and generate bed files, turning bed files into clustering matrix, specified memory usage options, and remove chunks
+writeBlast = 0
+k_search_length = 8
+runBlastParallel = 0
+blastMemory = 100
+blast2bed = 0
+generateClusteringMatrix = 0
+lowMemory = 0
+minChunkSize = 50000
+removeNonChunk = 1
+minChunkThreshold = 0
+tfidf = 0
+perfect_mode = 0
+
+# transform and cluster the data
+transformData = 0
+reduction_techniques = tsne
+transformMetric = cosine
+ClusterAll = 1
+clusterMethods = BGMM
+grabAllClusters = 1
+n_neighbors = 10
+metric = yule
+weighted_nn = 0
+mst = 1
+
+# extract the subgenomes
+extract = 1
+diff_kmer_threshold = 8
+default_kmercount_value = 2
+diff_sample_rate = 1
+unionbed_threshold = 10,2
+bootstrap = 1

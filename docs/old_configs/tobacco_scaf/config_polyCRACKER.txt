@@ -1,0 +1,68 @@
+# polyCRACKER configuration file
+
+# file paths
+blastPath = ./blast_files/
+kmercountPath = ./kmercount_files/
+fastaPath = ./fasta_files/
+bedPath = ./bed_files/
+
+# genome
+genome = tobacco_trimmed_wrap.fa
+
+# sge interpreter
+slurm = 0
+local = 1
+
+# blast or bbtools
+BB = 1
+
+# recommended practice, number of dimensions > number of subgenomes
+n_subgenomes = 2
+n_dimensions = 3
+
+# split fasta into chunks
+splitFasta = 0
+preFilter = 0
+splitFastaLineLength = 100000
+
+# write kmer counts and convert to fasta file to be blasted
+writeKmer = 0
+kmerLength = 26
+kmer2Fasta = 0
+kmer_low_count = 100
+use_high_count = 0
+kmer_high_count = 2000000
+sampling_sensitivity = 1
+
+# use original genome for final analysis output?
+original = 0
+
+# blast and generate bed files, turning bed files into clustering matrix, specified memory usage options, and remove chunks
+writeBlast = 0
+runBlastParallel = 0
+blastMemory = 100
+blast2bed = 0
+generateClusteringMatrix = 0
+lowMemory = 0
+minChunkSize = 50000
+removeNonChunk = 0
+minChunkThreshold = 1
+
+# transform and cluster the data
+transformData = 0
+reduction_techniques = kpca
+transformMetric = cosine
+ClusterAll = 0
+clusterMethods = BGMM
+grabAllClusters = 0
+n_neighbors = 20
+metric = cosine
+weighted_nn = 0
+
+# extract the subgenomes
+extract = 1
+diff_kmer_threshold = 30
+default_kmercount_value = 1
+diff_sample_rate = 1
+unionbed_threshold = 7,2
+bootstrap = 1
