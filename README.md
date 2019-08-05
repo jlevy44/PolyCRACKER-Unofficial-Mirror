@@ -31,7 +31,7 @@ polyCRACKER can be used to identify and separate sequences belonging to one spec
 In some cases, polyCRACKER performs as well at separating subgenomes of an allopolyploid as the manual
 extraction of subgenomes by sequence alignment, when the progenitor genome sequences are known and available.
 
-#### For more information, see the polyCRACKER manuscript preprint. Please cite the following article if you use polyCRACKER in your work.
+#### For more information, see the polyCRACKER manuscript. Please cite the following article if you use polyCRACKER in your work.
 
 **[PolyCRACKER, a robust method for the unsupervised partitioning of polyploid subgenomes by signatures of repetitive DNA evolution.
 \*Sean P Gordon, \*Joshua J Levy, John P Vogel](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5828-5)**
